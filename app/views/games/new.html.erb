@@ -1,0 +1,17 @@
+<h1>Play a new game</h1>
+
+<p>Make a word from these letters:</p>
+<h2><%= @grid %></h2>
+
+
+<form action="score" method="GET">
+  <input type="text" name="@option" placeholder="What's your guess?">
+   <input type="hidden" name="@grid" value= "<%= @grid.join %>">
+  <input type="submit" value="Submit">
+</form>
+
+<h2>Your total score is: <%= @total_score %></h2>
+
+
+
+
